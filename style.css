@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Raleway:ital,wght@0,100..900;1,100..900&display=swap');
+
+body{
+    background-color: antiquewhite;
+}
+
+*{
+    margin: 0;
+    padding: 0;
+}
+
+nav{
+    font-family: 'Courier New', Courier, monospace;
+}
+nav ul {
+    display: flex;
+    list-style-type: none;
+    height: 82px;
+    background-color: black;
+    color: whitesmoke;
+    align-items: center;
+    margin-bottom: 8px;
+}
+nav ul li{
+    padding: 0px 12px;
+}
+
+.brand img{
+    width: 76px;
+    color: aliceblue;
+    padding:  0px 5px;
+}
+.brand{
+    display: flex;
+    align-items: center;
+    font-weight: bolder;
+    font-size: 1.5rem;
+}
+.container{
+    min-height: 70vh;
+    background-color: black;
+    color: white;
+    /* display: flex; */
+    margin: auto;
+    width: 70%;
+    border-radius: 5px;
+    padding: 20px;
+    background-image: url("abcd.jpg");
+    background-size: cover;
+}
+.bottom{
+    position: sticky;
+    height: 80px;
+    background-color: black;
+    bottom :0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: antiquewhite;
+    flex-direction: column;
+    margin-bottom: -20px;
+}
+#myProgress{
+     width: 245vh;
+     display: flex;
+     cursor: pointer;
+}
+
+.icon{
+    color: red;
+    align-items: center;
+    margin-top: -18px;
+    transform: translateX(50%) translateY(0px);
+    position: sticky;
+  top: 94%;
+    right:50%;
+    display: flex;
+    gap: 10px;
+
+}
+.icon i{
+    cursor: pointer;
+
+}
+.songlist{
+    height: 45px;
+    display: flex;
+    width: 51%;
+    background-color: aliceblue;
+    color: black;
+    /* margin-right: 10px;
+    justify-content: space-between; */
+    border-radius: 18px;
+    margin: 5px 0;
+
+}
+.songlist img{
+    position: relative; 
+    left: -20px;
+    justify-content: space-between;
+    align-items: center;
+    width: 43Px; 
+    margin: 0 23px;
+    border-radius: 15px;
+
+
+}
+.timeStamp{
+    margin: 0 9px;
+    cursor: pointer;
+}
+
+.timeStamp i {
+    cursor: pointer;
+}
+.songItemContainer{
+    margin-top: 10px;
+}
+.songinfo{
+    position: relative;
+    color: aliceblue;
+    left: -29vw;
+}
+.songinfo img{
+    opacity: 0;
+    transition: opacity 0.1s ease-in;
+}
